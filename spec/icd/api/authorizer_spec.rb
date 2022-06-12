@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'icd/api/authorizer'
+require 'icd/api/access_token'
 
 RSpec.describe Icd::Api::Authorizer do
   let(:token) do
@@ -16,14 +17,18 @@ RSpec.describe Icd::Api::Authorizer do
     '_WVCGcKwLl80YpV3utN7ukL6YRm_5Gcl_bx208zbfbAzCk0NDZtEpZlRgToQ'
   end
 
+  let!(:faraday)      { Faraday.new }
+  let!(:access_token) { instance_double(Icd::Api::AccessToken) }
+
   before :each do
-    # allow(subject).to receive(:http_adapter).and_return(faraday)
-    # allow_any_instance_of(Faraday).to_receive(:post).and_return('{}')
+    allow(Faraday::Connection).to receive(:new).and_return faraday
+    allow(faraday).to receive(:post).and_return(double('response', status: 200, body: '{}'))
+    allow(Icd::Api::AccessToken).to receive(:new).and_return(access_token)
   end
   describe '#retrieve_access_token' do
     subject { described_class.new(client_id: 'client_id', client_secret: 'client_secret') }
 
-    xit 'sends request to token endpoint' do
+    it 'sends request to token endpoint' do
       subject.retrieve_access_token
       expect(faraday).to have_received(:post)
         .with('https://icdaccessmanagement.who.int/connect/token',
@@ -31,6 +36,10 @@ RSpec.describe Icd::Api::Authorizer do
               grant_type: 'client_credentials',
               client_id: 'client_id',
               client_secret: 'client_secret')
+    end
+
+    it 'returns access token' do
+      expect(subject.retrieve_access_token).to eq access_token
     end
   end
 end
