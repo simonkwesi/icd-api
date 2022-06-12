@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require "icd/api/version"
+require 'icd/api/version'
 
-require "icd/api/client"
+require 'icd/api/client'
 
 module Icd
   module Api

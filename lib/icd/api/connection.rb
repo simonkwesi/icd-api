@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "icd/api/authorizer"
+require 'icd/api/authorizer'
 
 module Icd
   module Api
@@ -32,8 +32,8 @@ module Icd
       end
 
       def headers
-        { accept: "application/json", "API-Version" => "v2", "Accept-Language" => "en",
-          "Authorization" => "Bearer #{access_token.token}" }
+        { accept: 'application/json', 'API-Version' => 'v2', 'Accept-Language' => 'en',
+          'Authorization' => "Bearer #{access_token.token}" }
       end
 
       def access_token

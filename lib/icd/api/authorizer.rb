@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-require "icd/api/access_token"
+require 'icd/api/access_token'
 
 module Icd
   module Api
     class Authorizer
-      TOKEN_ENDPOINT = "https://icdaccessmanagement.who.int/connect/token"
-      SCOPE = "icdapi_access"
-      GRANT_TYPE = "client_credentials"
+      TOKEN_ENDPOINT = 'https://icdaccessmanagement.who.int/connect/token'
+      SCOPE = 'icdapi_access'
+      GRANT_TYPE = 'client_credentials'
 
       def initialize(client_id:, client_secret:)
         @client_id = client_id

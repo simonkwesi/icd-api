@@ -1,6 +1,16 @@
+AllCops:
+  TargetRubyVersion: 2.6
+
+Metrics/BlockLength:
+    Exclude:
+    - "**/*_spec.rb"
+
+Style/Documentation:
+  Enabled: false
+
 Style/StringLiterals:
   Enabled: true
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes
 
 Style/StringLiteralsInInterpolation:
   Enabled: true
