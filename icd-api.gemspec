@@ -32,5 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency("faraday", ">= 1.7")
   spec.add_dependency("faraday_middleware", ">= 1.2.0")
 
-  gem.add_development_dependency "rubocop", "1.30.0"
+  # gem.add_development_dependency "bundler"
+  spec.add_development_dependency "rubocop", ">=1.30.0"
+  spec.add_development_dependency "rspec"
 end
