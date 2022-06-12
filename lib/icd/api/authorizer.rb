@@ -27,7 +27,7 @@ module Icd
       end
 
       def http_adapter
-        Faraday
+        Faraday.new
       end
     end
   end

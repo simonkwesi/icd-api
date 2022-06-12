@@ -3,7 +3,7 @@
 module Icd
   module Api
     class AccessToken
-      attr_reader :token
+      attr_reader :token, :expires_at
 
       def initialize(body)
         body.transform_keys!(&:to_sym)
