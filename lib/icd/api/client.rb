@@ -29,13 +29,6 @@ module Icd
         end
       end
 
-      def fetch_by_code(code)
-        response = connection.get("codeinfo/#{code}", { flexiblemode: 'false' })
-
-        stem_id = response.body['stemId'].split('/').last
-        connection.get(stem_id.to_s, {})
-      end
-
       def fetch_stem_id_by_code(code)
         response = connection.get("codeinfo/#{code}", { flexiblemode: 'false' })
         stem_id = response.body['stemId']
