@@ -42,7 +42,7 @@ http_interactions:
   recorded_at: Thu, 04 May 2023 11:41:56 GMT
 - request:
     method: get
-    uri: https://id.who.int/icd/release/11/2022-02/mms/codeinfo/1F4Z?flexiblemode=false
+    uri: https://id.who.int/icd/release/11/2022-02/mms/1439886552
     body:
       encoding: US-ASCII
       string: ''
@@ -67,7 +67,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 04 May 2023 11:41:55 GMT
+      - Thu, 04 May 2023 11:41:56 GMT
       Server:
       - Microsoft-IIS/10.0
       Access-Control-Expose-Headers:
@@ -86,6 +86,19 @@ http_interactions:
       - ASP.NET
     body:
       encoding: ASCII-8BIT
-      string: '{"@context":"http://id.who.int/icd/contexts/contextForCodeInfo.json","@id":"http://id.who.int/icd/release/11/2022-02/mms/codeinfo/1F4Z","code":"1F4Z","stemId":"http://id.who.int/icd/release/11/2022-02/mms/1439886552/unspecified"}'
+      string: '{"@context":"http://id.who.int/icd/contexts/contextForLinearizationEntity.json","@id":"http://id.who.int/icd/release/11/2022-02/mms/1439886552","parent":["http://id.who.int/icd/release/11/2022-02/mms/255141529"],"child":["http://id.who.int/icd/release/11/2022-02/mms/579583286","http://id.who.int/icd/release/11/2022-02/mms/1203794080","http://id.who.int/icd/release/11/2022-02/mms/862789727","http://id.who.int/icd/release/11/2022-02/mms/1168452782","http://id.who.int/icd/release/11/2022-02/mms/1260563068","http://id.who.int/icd/release/11/2022-02/mms/633896543","http://id.who.int/icd/release/11/2022-02/mms/1439886552/unspecified"],"browserUrl":"https://icd.who.int/browse11/l-m/en#/http%3a%2f%2fid.who.int%2ficd%2fentity%2f1439886552","code":"","source":"http://id.who.int/icd/entity/1439886552","classKind":"block","blockId":"BlockL2-1F4","codeRange":"1F40-1F4Z","foundationChildElsewhere":[{"label":{"@language":"en","@value":"HIV
+        disease clinical stage 4 associated with malaria"},"foundationReference":"http://id.who.int/icd/entity/97626683","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/97626683"},{"label":{"@language":"en","@value":"HIV
+        disease clinical stage 3 associated with malaria"},"foundationReference":"http://id.who.int/icd/entity/993495155","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/993495155"},{"label":{"@language":"en","@value":"HIV
+        disease clinical stage 2 associated with malaria"},"foundationReference":"http://id.who.int/icd/entity/1702650002","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/1702650002"},{"label":{"@language":"en","@value":"HIV
+        disease clinical stage 1 associated with malaria"},"foundationReference":"http://id.who.int/icd/entity/1552401955","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/1552401955"},{"label":{"@language":"en","@value":"Human
+        immunodeficiency virus disease associated with malaria"},"foundationReference":"http://id.who.int/icd/entity/771273482","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/771273482"},{"label":{"@language":"en","@value":"Malaria
+        complicating pregnancy, childbirth, or the puerperium"},"foundationReference":"http://id.who.int/icd/entity/684978486","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/684978486"},{"label":{"@language":"en","@value":"Other
+        congenital malaria"},"foundationReference":"http://id.who.int/icd/entity/623070032","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/1945127438/other"}],"title":{"@language":"en","@value":"Malaria"},"definition":{"@language":"en","@value":"A
+        disease caused by an infection with a protozoan parasite from the Plasmodium
+        genus. This disease commonly presents with fever, chills, headache, nausea
+        and vomiting, or malaise. Transmission is through the bite of an infected
+        mosquito. Confirmation is commonly by identification of the Plasmodium genus
+        in a blood sample."},"relatedEntitiesInPerinatalChapter":["http://id.who.int/icd/entity/1945127438"],"codingNote":{"@language":"en","@value":"In
+        cases of mixed malaria code all relevant types separately."}}'
   recorded_at: Thu, 04 May 2023 11:41:56 GMT
 recorded_with: VCR 6.1.0

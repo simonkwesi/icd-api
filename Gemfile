@@ -14,5 +14,3 @@ gem 'rubocop', '~> 0.80'
 gem 'vcr'
 
 gem 'webmock'
-
-gem 'byebug'

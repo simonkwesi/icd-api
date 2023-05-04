@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 28 Apr 2023 13:48:27 GMT
+      - Thu, 04 May 2023 11:41:56 GMT
       Server:
       - Kestrel
       Cache-Control:
@@ -38,8 +38,8 @@ http_interactions:
       - ASP.NET
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2ODI2ODk3MDcsImV4cCI6MTY4MjY5MzMwNywiaXNzIjoiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQiLCJhdWQiOlsiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQvcmVzb3VyY2VzIiwiaWNkYXBpIl0sImNsaWVudF9pZCI6IjUyMjkzYmJjLWM4NTItNGYzYS04YjhiLWNhM2EzOTU0YzhkNl9hOGJkMDEzYy1kYTc2LTQyY2QtOGY0Ni1mNDliZTRmMTc2ODkiLCJzY29wZSI6WyJpY2RhcGlfYWNjZXNzIl19.XLLMCITPq2tV0Xjrh6Ukvi75XDebhETFXo-lhCmYQfQZamsIYiXxJ26SsmH5S2uWeapyC-NbwmnV0ckn1ikgdbbvlXmKP_uyKZ2RQ2moB0tTzsmsNF5idUUg2bT1Iko_D-IjFvCn9sdpbsojX5LMF4toJiGZUWFKYm_OvpbnBylcNta6sBXaSY86rTVZW_mIT0cARB4DAIBLRWS7J5rCbD5fAOoMhvY_CvWVMTm4KZFB7jHMleIDAYoCTBfrfWhDuJgVkdmjRWb05IkIzd9N1C6YpnhoHuKPcmMFnPLmw73N5xi3iNU3l6xN9JxnpjKSJYFoRt2ijy263aWfhRuJEA","expires_in":3600,"token_type":"Bearer"}'
-  recorded_at: Fri, 28 Apr 2023 13:48:27 GMT
+      string: '{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2ODMyMDA1MTYsImV4cCI6MTY4MzIwNDExNiwiaXNzIjoiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQiLCJhdWQiOlsiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQvcmVzb3VyY2VzIiwiaWNkYXBpIl0sImNsaWVudF9pZCI6IjUyMjkzYmJjLWM4NTItNGYzYS04YjhiLWNhM2EzOTU0YzhkNl9hOGJkMDEzYy1kYTc2LTQyY2QtOGY0Ni1mNDliZTRmMTc2ODkiLCJzY29wZSI6WyJpY2RhcGlfYWNjZXNzIl19.m2S82UGcb0vPfN0Lu1j1Uh2tY7GqricNn1VG_Hk3wHuz_oCDnFB9064Vh2MRjA7JLX71c7MIFxI2Mh0CHME3EH0-TfvLAGtvO6ym8ifkLBCALkSdP5nDnxziletVQVBAiNjfC56O9Xomsu4xTzzUCQXM-YAoo35wnXF8sk8nNgLuLBRYWrCaqADjZK8LeMEq2FoLPEsQXgSlwCFnEIsnN2KEIjN3L8NmWkuzrbzmon0W91jtAr_cZ9XrujVsd0VJURoYW9dsvCR9APVmsW-1BLVwc4SakapJiHdLsJH0g5qROhNEABbb_CvfW-NDcYoQ9dmD0J4B0xvLeGdmRekzvg","expires_in":3600,"token_type":"Bearer"}'
+  recorded_at: Thu, 04 May 2023 11:41:55 GMT
 - request:
     method: get
     uri: https://id.who.int/icd/release/11/2022-02/mms/codeinfo/FB32.5?flexiblemode=false
@@ -54,7 +54,7 @@ http_interactions:
       Accept-Language:
       - en
       Authorization:
-      - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2ODI2ODk3MDcsImV4cCI6MTY4MjY5MzMwNywiaXNzIjoiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQiLCJhdWQiOlsiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQvcmVzb3VyY2VzIiwiaWNkYXBpIl0sImNsaWVudF9pZCI6IjUyMjkzYmJjLWM4NTItNGYzYS04YjhiLWNhM2EzOTU0YzhkNl9hOGJkMDEzYy1kYTc2LTQyY2QtOGY0Ni1mNDliZTRmMTc2ODkiLCJzY29wZSI6WyJpY2RhcGlfYWNjZXNzIl19.XLLMCITPq2tV0Xjrh6Ukvi75XDebhETFXo-lhCmYQfQZamsIYiXxJ26SsmH5S2uWeapyC-NbwmnV0ckn1ikgdbbvlXmKP_uyKZ2RQ2moB0tTzsmsNF5idUUg2bT1Iko_D-IjFvCn9sdpbsojX5LMF4toJiGZUWFKYm_OvpbnBylcNta6sBXaSY86rTVZW_mIT0cARB4DAIBLRWS7J5rCbD5fAOoMhvY_CvWVMTm4KZFB7jHMleIDAYoCTBfrfWhDuJgVkdmjRWb05IkIzd9N1C6YpnhoHuKPcmMFnPLmw73N5xi3iNU3l6xN9JxnpjKSJYFoRt2ijy263aWfhRuJEA
+      - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2ODMyMDA1MTYsImV4cCI6MTY4MzIwNDExNiwiaXNzIjoiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQiLCJhdWQiOlsiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQvcmVzb3VyY2VzIiwiaWNkYXBpIl0sImNsaWVudF9pZCI6IjUyMjkzYmJjLWM4NTItNGYzYS04YjhiLWNhM2EzOTU0YzhkNl9hOGJkMDEzYy1kYTc2LTQyY2QtOGY0Ni1mNDliZTRmMTc2ODkiLCJzY29wZSI6WyJpY2RhcGlfYWNjZXNzIl19.m2S82UGcb0vPfN0Lu1j1Uh2tY7GqricNn1VG_Hk3wHuz_oCDnFB9064Vh2MRjA7JLX71c7MIFxI2Mh0CHME3EH0-TfvLAGtvO6ym8ifkLBCALkSdP5nDnxziletVQVBAiNjfC56O9Xomsu4xTzzUCQXM-YAoo35wnXF8sk8nNgLuLBRYWrCaqADjZK8LeMEq2FoLPEsQXgSlwCFnEIsnN2KEIjN3L8NmWkuzrbzmon0W91jtAr_cZ9XrujVsd0VJURoYW9dsvCR9APVmsW-1BLVwc4SakapJiHdLsJH0g5qROhNEABbb_CvfW-NDcYoQ9dmD0J4B0xvLeGdmRekzvg
       User-Agent:
       - Faraday v1.10.0
       Accept-Encoding:
@@ -67,7 +67,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 28 Apr 2023 13:48:27 GMT
+      - Thu, 04 May 2023 11:41:55 GMT
       Server:
       - Microsoft-IIS/10.0
       Access-Control-Expose-Headers:
@@ -87,5 +87,5 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"@context":"http://id.who.int/icd/contexts/contextForCodeInfo.json","@id":"http://id.who.int/icd/release/11/2022-02/mms/codeinfo/FB32.5","code":"FB32.5","stemId":"http://id.who.int/icd/release/11/2022-02/mms/254923627"}'
-  recorded_at: Fri, 28 Apr 2023 13:48:27 GMT
+  recorded_at: Thu, 04 May 2023 11:41:56 GMT
 recorded_with: VCR 6.1.0
