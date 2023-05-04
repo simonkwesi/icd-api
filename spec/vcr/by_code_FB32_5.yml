@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://icdaccessmanagement.who.int/connect/token
+    body:
+      encoding: UTF-8
+      string: Secret
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 04 May 2023 11:41:56 GMT
+      Server:
+      - Kestrel
+      Cache-Control:
+      - no-store, no-cache, max-age=0
+      Pragma:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - ASP.NET
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2ODMyMDA1MTYsImV4cCI6MTY4MzIwNDExNiwiaXNzIjoiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQiLCJhdWQiOlsiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQvcmVzb3VyY2VzIiwiaWNkYXBpIl0sImNsaWVudF9pZCI6IjUyMjkzYmJjLWM4NTItNGYzYS04YjhiLWNhM2EzOTU0YzhkNl9hOGJkMDEzYy1kYTc2LTQyY2QtOGY0Ni1mNDliZTRmMTc2ODkiLCJzY29wZSI6WyJpY2RhcGlfYWNjZXNzIl19.m2S82UGcb0vPfN0Lu1j1Uh2tY7GqricNn1VG_Hk3wHuz_oCDnFB9064Vh2MRjA7JLX71c7MIFxI2Mh0CHME3EH0-TfvLAGtvO6ym8ifkLBCALkSdP5nDnxziletVQVBAiNjfC56O9Xomsu4xTzzUCQXM-YAoo35wnXF8sk8nNgLuLBRYWrCaqADjZK8LeMEq2FoLPEsQXgSlwCFnEIsnN2KEIjN3L8NmWkuzrbzmon0W91jtAr_cZ9XrujVsd0VJURoYW9dsvCR9APVmsW-1BLVwc4SakapJiHdLsJH0g5qROhNEABbb_CvfW-NDcYoQ9dmD0J4B0xvLeGdmRekzvg","expires_in":3600,"token_type":"Bearer"}'
+  recorded_at: Thu, 04 May 2023 11:41:55 GMT
+- request:
+    method: get
+    uri: https://id.who.int/icd/release/11/2022-02/mms/codeinfo/FB32.5?flexiblemode=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Api-Version:
+      - v2
+      Accept-Language:
+      - en
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2ODMyMDA1MTYsImV4cCI6MTY4MzIwNDExNiwiaXNzIjoiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQiLCJhdWQiOlsiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQvcmVzb3VyY2VzIiwiaWNkYXBpIl0sImNsaWVudF9pZCI6IjUyMjkzYmJjLWM4NTItNGYzYS04YjhiLWNhM2EzOTU0YzhkNl9hOGJkMDEzYy1kYTc2LTQyY2QtOGY0Ni1mNDliZTRmMTc2ODkiLCJzY29wZSI6WyJpY2RhcGlfYWNjZXNzIl19.m2S82UGcb0vPfN0Lu1j1Uh2tY7GqricNn1VG_Hk3wHuz_oCDnFB9064Vh2MRjA7JLX71c7MIFxI2Mh0CHME3EH0-TfvLAGtvO6ym8ifkLBCALkSdP5nDnxziletVQVBAiNjfC56O9Xomsu4xTzzUCQXM-YAoo35wnXF8sk8nNgLuLBRYWrCaqADjZK8LeMEq2FoLPEsQXgSlwCFnEIsnN2KEIjN3L8NmWkuzrbzmon0W91jtAr_cZ9XrujVsd0VJURoYW9dsvCR9APVmsW-1BLVwc4SakapJiHdLsJH0g5qROhNEABbb_CvfW-NDcYoQ9dmD0J4B0xvLeGdmRekzvg
+      User-Agent:
+      - Faraday v1.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 04 May 2023 11:41:55 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Access-Control-Expose-Headers:
+      - API-Version
+      Cache-Control:
+      - public,max-age=36000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept, Accept-Language, API-Version,Accept-Encoding
+      Request-Context:
+      - appId=cid-v1:1862a212-e319-456e-be6e-745dfd3d92c2
+      Api-Version:
+      - v2.3.0
+      X-Powered-By:
+      - ASP.NET
+    body:
+      encoding: ASCII-8BIT
+      string: '{"@context":"http://id.who.int/icd/contexts/contextForCodeInfo.json","@id":"http://id.who.int/icd/release/11/2022-02/mms/codeinfo/FB32.5","code":"FB32.5","stemId":"http://id.who.int/icd/release/11/2022-02/mms/254923627"}'
+  recorded_at: Thu, 04 May 2023 11:41:56 GMT
+recorded_with: VCR 6.1.0
