@@ -1,0 +1,104 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://icdaccessmanagement.who.int/connect/token
+    body:
+      encoding: UTF-8
+      string: client_id=9196dda6-1b2e-4b63-b860-43dd8beaf7ac_5c043d4d-9de3-4000-8b9f-031d46bffd5a&client_secret=SkYsCHb02fYyJsLPS%2FAvyKIBifwGir90vCI1Z82vYG0%3D&grant_type=client_credentials&scope=icdapi_access
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 31 Jul 2023 13:58:41 GMT
+      Server:
+      - Kestrel
+      Cache-Control:
+      - no-store, no-cache, max-age=0
+      Pragma:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - ASP.NET
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2OTA4MTE5MjEsImV4cCI6MTY5MDgxNTUyMSwiaXNzIjoiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQiLCJhdWQiOlsiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQvcmVzb3VyY2VzIiwiaWNkYXBpIl0sImNsaWVudF9pZCI6IjkxOTZkZGE2LTFiMmUtNGI2My1iODYwLTQzZGQ4YmVhZjdhY181YzA0M2Q0ZC05ZGUzLTQwMDAtOGI5Zi0wMzFkNDZiZmZkNWEiLCJzY29wZSI6WyJpY2RhcGlfYWNjZXNzIl19.YzLY8DsMS69Cef79xscl-Zpry2xabD330gyoHEj3k-6emVAYl6THnJw0MuEZqJaWYTp0Es9QPf6khVBP0az__zVU3S6FNTpI4Pijsqw-iVuSNx8bA072JWEzYadxrph8Tsf-BpaBkZtAbNPjTliECkuTT9GTya9d_8__DriQCPsuBjZComahJq0c3zajiQHe07P_QNXip-YgV_MS84MMbpR81_CLu-V01yV_R7Ds5-NdQpybBdkZPl2fAzsxEWkGrM7RslQkdqlgsIEtPdxJURGnWAl_Gt2ifzOJwQC2n3itQTzjqKRZfz-Z23Y19itdINgdkk8DcxhmOuDGXppjsA","expires_in":3600,"token_type":"Bearer"}'
+  recorded_at: Mon, 31 Jul 2023 13:58:40 GMT
+- request:
+    method: get
+    uri: https://id.who.int/icd/release/11/2022-02/mms/1439886552
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Api-Version:
+      - v2
+      Accept-Language:
+      - en
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2OTA4MTE5MjEsImV4cCI6MTY5MDgxNTUyMSwiaXNzIjoiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQiLCJhdWQiOlsiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQvcmVzb3VyY2VzIiwiaWNkYXBpIl0sImNsaWVudF9pZCI6IjkxOTZkZGE2LTFiMmUtNGI2My1iODYwLTQzZGQ4YmVhZjdhY181YzA0M2Q0ZC05ZGUzLTQwMDAtOGI5Zi0wMzFkNDZiZmZkNWEiLCJzY29wZSI6WyJpY2RhcGlfYWNjZXNzIl19.YzLY8DsMS69Cef79xscl-Zpry2xabD330gyoHEj3k-6emVAYl6THnJw0MuEZqJaWYTp0Es9QPf6khVBP0az__zVU3S6FNTpI4Pijsqw-iVuSNx8bA072JWEzYadxrph8Tsf-BpaBkZtAbNPjTliECkuTT9GTya9d_8__DriQCPsuBjZComahJq0c3zajiQHe07P_QNXip-YgV_MS84MMbpR81_CLu-V01yV_R7Ds5-NdQpybBdkZPl2fAzsxEWkGrM7RslQkdqlgsIEtPdxJURGnWAl_Gt2ifzOJwQC2n3itQTzjqKRZfz-Z23Y19itdINgdkk8DcxhmOuDGXppjsA
+      User-Agent:
+      - Faraday v1.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 31 Jul 2023 13:58:43 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Access-Control-Expose-Headers:
+      - API-Version
+      Cache-Control:
+      - public,max-age=36000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept, Accept-Language, API-Version,Accept-Encoding
+      Request-Context:
+      - appId=cid-v1:1862a212-e319-456e-be6e-745dfd3d92c2
+      Api-Version:
+      - v2.3.0
+      X-Powered-By:
+      - ASP.NET
+    body:
+      encoding: ASCII-8BIT
+      string: '{"@context":"http://id.who.int/icd/contexts/contextForLinearizationEntity.json","@id":"http://id.who.int/icd/release/11/2022-02/mms/1439886552","parent":["http://id.who.int/icd/release/11/2022-02/mms/255141529"],"child":["http://id.who.int/icd/release/11/2022-02/mms/579583286","http://id.who.int/icd/release/11/2022-02/mms/1203794080","http://id.who.int/icd/release/11/2022-02/mms/862789727","http://id.who.int/icd/release/11/2022-02/mms/1168452782","http://id.who.int/icd/release/11/2022-02/mms/1260563068","http://id.who.int/icd/release/11/2022-02/mms/633896543","http://id.who.int/icd/release/11/2022-02/mms/1439886552/unspecified"],"browserUrl":"https://icd.who.int/browse11/l-m/en#/http%3a%2f%2fid.who.int%2ficd%2fentity%2f1439886552","code":"","source":"http://id.who.int/icd/entity/1439886552","classKind":"block","blockId":"BlockL2-1F4","codeRange":"1F40-1F4Z","foundationChildElsewhere":[{"label":{"@language":"en","@value":"HIV
+        disease clinical stage 4 associated with malaria"},"foundationReference":"http://id.who.int/icd/entity/97626683","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/97626683"},{"label":{"@language":"en","@value":"HIV
+        disease clinical stage 3 associated with malaria"},"foundationReference":"http://id.who.int/icd/entity/993495155","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/993495155"},{"label":{"@language":"en","@value":"HIV
+        disease clinical stage 2 associated with malaria"},"foundationReference":"http://id.who.int/icd/entity/1702650002","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/1702650002"},{"label":{"@language":"en","@value":"HIV
+        disease clinical stage 1 associated with malaria"},"foundationReference":"http://id.who.int/icd/entity/1552401955","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/1552401955"},{"label":{"@language":"en","@value":"Human
+        immunodeficiency virus disease associated with malaria"},"foundationReference":"http://id.who.int/icd/entity/771273482","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/771273482"},{"label":{"@language":"en","@value":"Malaria
+        complicating pregnancy, childbirth, or the puerperium"},"foundationReference":"http://id.who.int/icd/entity/684978486","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/684978486"},{"label":{"@language":"en","@value":"Other
+        congenital malaria"},"foundationReference":"http://id.who.int/icd/entity/623070032","linearizationReference":"http://id.who.int/icd/release/11/2022-02/mms/1945127438/other"}],"title":{"@language":"en","@value":"Malaria"},"definition":{"@language":"en","@value":"A
+        disease caused by an infection with a protozoan parasite from the Plasmodium
+        genus. This disease commonly presents with fever, chills, headache, nausea
+        and vomiting, or malaise. Transmission is through the bite of an infected
+        mosquito. Confirmation is commonly by identification of the Plasmodium genus
+        in a blood sample."},"relatedEntitiesInPerinatalChapter":["http://id.who.int/icd/entity/1945127438"],"codingNote":{"@language":"en","@value":"In
+        cases of mixed malaria code all relevant types separately."}}'
+  recorded_at: Mon, 31 Jul 2023 13:58:44 GMT
+recorded_with: VCR 6.2.0
