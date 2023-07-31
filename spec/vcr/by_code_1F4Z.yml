@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://icdaccessmanagement.who.int/connect/token
+    body:
+      encoding: UTF-8
+      string: client_id=&client_secret=&grant_type=client_credentials&scope=icdapi_access
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 31 Jul 2023 08:28:42 GMT
+      Server:
+      - Kestrel
+      Cache-Control:
+      - no-store, no-cache, max-age=0
+      Pragma:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+      X-Powered-By:
+      - ASP.NET
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_client"}'
+  recorded_at: Mon, 31 Jul 2023 08:28:43 GMT
+- request:
+    method: get
+    uri: https://id.who.int/icd/release/11/2022-02/mms/codeinfo/1F4Z?flexiblemode=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Api-Version:
+      - v2
+      Accept-Language:
+      - en
+      Authorization:
+      - Bearer
+      User-Agent:
+      - Faraday v1.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 31 Jul 2023 08:28:43 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Access-Control-Expose-Headers:
+      - API-Version
+      Transfer-Encoding:
+      - chunked
+      Www-Authenticate:
+      - Bearer
+      Request-Context:
+      - appId=cid-v1:1862a212-e319-456e-be6e-745dfd3d92c2
+      Api-Version:
+      - v2.3.0
+      Accept:
+      - text/html
+      X-Powered-By:
+      - ASP.NET
+    body:
+      encoding: UTF-8
+      string: 'Authentication failed. The request must include a valid and non-expired
+        bearer token in the Authorization header.
+
+        '
+  recorded_at: Mon, 31 Jul 2023 08:28:44 GMT
+recorded_with: VCR 6.2.0

@@ -29,11 +29,17 @@ module Icd
         end
       end
 
-      def fetch_by_code(code)
+      def fetch_stem_id_by_code(code)
         response = connection.get("codeinfo/#{code}", { flexiblemode: 'false' })
 
-        stem_id = response.body['stemId'].split('/').last
-        connection.get(stem_id.to_s, {})
+        response.body['stemId']
+      end
+
+      def fetch_info_by_stem_id(stem_id)
+        entity_id = stem_id.split('/').last
+        entity_id = stem_id.split('/')[-2] if entity_id == 'unknown'
+        response = connection.get(entity_id, {})
+        response.body
       end
 
       private
