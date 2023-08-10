@@ -4,13 +4,12 @@ require 'zeitwerk'
 require 'dry-configurable'
 require 'faraday'
 
-
 module Icd
   module Api
     class Error < StandardError; end
   end
 end
-root = File.expand_path("..", __dir__)
+root = File.expand_path('..', __dir__)
 
 loader = Zeitwerk::Loader.new
 loader.push_dir(root)
