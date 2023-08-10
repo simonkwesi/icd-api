@@ -3,17 +3,16 @@
 require 'zeitwerk'
 require 'dry-configurable'
 require 'faraday'
-require 'icd/api/version'
 
-LOADER = Zeitwerk::Loader.new
-%w[lib].each do |require_path|
-  LOADER.push_dir(require_path)
-end
-
-LOADER.setup
 
 module Icd
   module Api
     class Error < StandardError; end
   end
 end
+root = File.expand_path("..", __dir__)
+
+loader = Zeitwerk::Loader.new
+loader.push_dir(root)
+loader.ignore("#{root}/icd-api.rb", "#{root}/icd/api/version.rb")
+loader.setup
