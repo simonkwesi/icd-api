@@ -22,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Configure your credentials using a block
+
+```ruby
+    Icd::Api::AuthorizeToken.configure do |conf|
+        conf.client_id = 'your_client_id'
+        conf.client_secret = 'your_client_secret'
+    end
+```
+Or declare the env variables:
+-  ICD_API_CLIENT_ID
+-  ICD_API_CLIENT_SECRET
 
 ## Development
 

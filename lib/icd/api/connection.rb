@@ -1,16 +1,12 @@
 # frozen_string_literal: true
 
-require 'icd/api/authorizer'
-
 module Icd
   module Api
     class Connection
       attr_reader :options
 
-      def initialize(client_id, client_secret, options)
+      def initialize(options: Options.new)
         @options = options
-        @client_id = client_id
-        @client_secret = client_secret
       end
 
       def get(endpoint, params)
@@ -37,7 +33,7 @@ module Icd
       end
 
       def access_token
-        Authorizer.new(client_id: @client_id, client_secret: @client_secret).retrieve_access_token
+        AuthorizeToken.call
       end
     end
   end
