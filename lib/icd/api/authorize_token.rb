@@ -12,6 +12,8 @@ module Icd
       setting :client_secret, default: ENV['ICD_API_CLIENT_SECRET']
 
       class << self
+        attr_reader :access_token
+
         def call
           return @access_token if valid?
 
@@ -23,7 +25,7 @@ module Icd
                                          client_secret: config.client_secret
                                        }
 
-          @access_token ||= AccessToken.new(::JSON.parse(response.body))
+          @access_token = AccessToken.new(::JSON.parse(response.body))
         end
 
         private
@@ -31,7 +33,7 @@ module Icd
         def valid?
           return false if @access_token.nil?
 
-          @access_token.expires_at > Time.now
+          @access_token.expires_at.to_i > Time.now.to_i
         end
 
         def http_adapter

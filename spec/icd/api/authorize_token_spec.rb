@@ -25,6 +25,20 @@ module Icd
             expect(subject.expires_at.to_i).to be_within(5).of(Time.now.to_i + 3600)
           end
         end
+
+        context 'when the token is expired' do
+          let(:expired_token) { AccessToken.new({ 'expires_in' => 0, 'access_token' => 'expired_token' }) }
+          before do
+            described_class.instance_variable_set(:@access_token, expired_token)
+          end
+
+          it 'gets a new token' do
+            VCR.use_cassette('icd/api/authorize_token') do
+              expect { subject }.to change(described_class, :access_token)
+              expect(subject.expires_at.to_i).to be_within(5).of(Time.now.to_i + 3600)
+            end
+          end
+        end
       end
     end
   end
