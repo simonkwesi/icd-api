@@ -3,29 +3,17 @@
 module Icd
   module Api
     class Options
-      DEFAULT_RELEASE_ID          = '2022-02'
-      DEFAULT_REVISION            = '11'
-      DEFAULT_LINEARIZATION_NAME  = 'mms'
-      DEFAULT_API_ROOT_URL        = 'https://id.who.int'
+      extend Dry::Configurable
 
-      def initialize(**options)
-        @options = options
-      end
+      setting :release_id, default: '2022-02', reader: true
+      setting :revision, default: '11', reader: true
+      setting :linearization_name, default: 'mms', reader: true
+      setting :root_url, default: 'https://id.who.int', reader: true
 
-      def release_id
-        @options[:release_id] ||= DEFAULT_RELEASE_ID
-      end
-
-      def revision
-        DEFAULT_REVISION
-      end
-
-      def linearization_name
-        @options[:linearization_name] ||= DEFAULT_LINEARIZATION_NAME
-      end
-
-      def root_url
-        @options[:root_url] ||= DEFAULT_API_ROOT_URL
+      %i[release_id revision linearization_name root_url].each do |new_method|
+        define_method new_method do
+          self.class.send new_method
+        end
       end
     end
   end

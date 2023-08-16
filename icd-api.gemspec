@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'Desc'
   spec.homepage      = 'https://www.github.com'
   spec.license       = 'MIT'
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.6.0')
+  spec.required_ruby_version = Gem::Requirement.new('>= 3.0.0')
 
   spec.metadata['allowed_push_host'] = 'http://mygemserver.com'
 
@@ -29,8 +29,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency('faraday', '>= 1.7')
-  spec.add_dependency('faraday_middleware', '>= 1.2.0')
+  spec.add_dependency('dry-configurable', '< 2')
+  spec.add_dependency('faraday', '< 3')
+  spec.add_dependency('zeitwerk', '< 3')
 
   # gem.add_development_dependency "bundler"
   spec.add_development_dependency 'rspec'
