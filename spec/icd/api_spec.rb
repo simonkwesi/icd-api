@@ -2,6 +2,6 @@
 
 RSpec.describe Icd::Api do
   it 'has a version number' do
-    expect(Icd::Api::VERSION).not_to be nil
+    expect(Icd::Api::VERSION).not_to be_nil
   end
 end

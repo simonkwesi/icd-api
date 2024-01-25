@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'Desc'
   spec.homepage      = 'https://www.github.com'
   spec.license       = 'MIT'
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.6.0')
+  spec.required_ruby_version = Gem::Requirement.new('>= 3.2.2')
 
   spec.metadata['allowed_push_host'] = 'http://mygemserver.com'
 
@@ -32,6 +32,10 @@ Gem::Specification.new do |spec|
   spec.add_dependency('faraday', '>= 1.7')
 
   # gem.add_development_dependency "bundler"
+  spec.add_development_dependency 'base64'
+  spec.add_development_dependency 'bigdecimal'
   spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'rubocop', '>=1.30.0'
+  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'rubocop-rspec'
+  spec.metadata['rubygems_mfa_required'] = 'true'
 end

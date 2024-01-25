@@ -11,6 +11,7 @@ RSpec.describe Icd::Api::Client do
     let(:response) do
       VCR.use_cassette('by_code_FB32.5') { client.fetch_stem_id_by_code('FB32.5') }
     end
+
     it 'returns required fields' do
       expect(response).to eq('http://id.who.int/icd/release/11/2022-02/mms/254923627')
     end
@@ -21,13 +22,13 @@ RSpec.describe Icd::Api::Client do
       VCR.use_cassette('by_code_1F4Z') { client.fetch_stem_id_by_code('1F4Z') }
     end
 
-    it 'returns string including unspecified' do
-      expect(response).to eq('http://id.who.int/icd/release/11/2022-02/mms/1439886552/unspecified')
-    end
-
     let(:stem_id_response) do
       stem_id = response.split('/')[-2]
       VCR.use_cassette('by_stemId_1439886552') { client.fetch_info_by_stem_id(stem_id) }
+    end
+
+    it 'returns string including unspecified' do
+      expect(response).to eq('http://id.who.int/icd/release/11/2022-02/mms/1439886552/unspecified')
     end
 
     it 'returns information on the parent' do

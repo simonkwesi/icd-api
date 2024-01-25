@@ -1,5 +1,22 @@
+inherit_from: .rubocop_todo.yml
+
+# see https://docs.rubocop.org/rubocop/configuration.html#merging-arrays-using-inherit_mode
+inherit_mode:
+  merge:
+    - Exclude
+
+require:
+  - rubocop-rspec
+
 AllCops:
-  TargetRubyVersion: 2.6
+  NewCops: enable
+  SuggestExtensions: false
+
+Gemspec/DevelopmentDependencies:
+  Enabled: false
+
+Gemspec/RequiredRubyVersion:
+  Enabled: false
 
 Metrics/BlockLength:
     Exclude:

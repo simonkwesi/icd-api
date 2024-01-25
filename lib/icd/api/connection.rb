@@ -20,7 +20,7 @@ module Icd
       private
 
       def connection
-        @connection ||= Faraday.new(url: options.root_url, headers: headers) do |faraday|
+        @connection ||= Faraday.new(url: options.root_url, headers:) do |faraday|
           faraday.adapter Faraday.default_adapter
           faraday.response :json
           faraday.request :json
