@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'Desc'
   spec.homepage      = 'https://www.github.com'
   spec.license       = 'MIT'
-  spec.required_ruby_version = Gem::Requirement.new('>= 3.2.2')
+  spec.required_ruby_version = Gem::Requirement.new('>= 3.1.0')
 
   spec.metadata['allowed_push_host'] = 'http://mygemserver.com'
 
