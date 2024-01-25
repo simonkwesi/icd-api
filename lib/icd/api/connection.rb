@@ -32,7 +32,7 @@ module Icd
       end
 
       def headers
-        { accept: 'application/json', 'API-Version' => 'v2', 'Accept-Language' => 'en',
+        { accept: 'application/json', 'API-Version' => 'v2', 'Accept-Language' => options.language,
           'Authorization' => "Bearer #{access_token.token}" }
       end
 
