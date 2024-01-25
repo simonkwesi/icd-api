@@ -20,7 +20,7 @@ module Icd
       private
 
       def connection
-        @connection ||= Faraday.new(url: options.root_url, headers: headers) do |faraday|
+        @connection ||= Faraday.new(url: options.root_url, headers:) do |faraday|
           faraday.adapter Faraday.default_adapter
           faraday.response :json
           faraday.request :json
@@ -32,7 +32,7 @@ module Icd
       end
 
       def headers
-        { accept: 'application/json', 'API-Version' => 'v2', 'Accept-Language' => 'en',
+        { accept: 'application/json', 'API-Version' => 'v2', 'Accept-Language' => options.language.to_s,
           'Authorization' => "Bearer #{access_token.token}" }
       end
 
