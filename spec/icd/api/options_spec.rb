@@ -6,8 +6,8 @@ RSpec.describe Icd::Api::Options do
   subject { described_class.new }
 
   describe '#release_id' do
-    it 'defaults to 2022-02' do
-      expect(subject.release_id).to eq('2022-02')
+    it 'defaults to 2023-01' do
+      expect(subject.release_id).to eq('2023-01')
     end
 
     it 'default can be overwritten' do

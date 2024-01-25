@@ -3,7 +3,9 @@
 module Icd
   module Api
     class Options
-      DEFAULT_RELEASE_ID          = '2022-02'
+      # see https://id.who.int/swagger/index.html
+      # and https://icd.who.int/docs/icd-api/SupportedClassifications/
+      DEFAULT_RELEASE_ID          = '2023-01'
       DEFAULT_REVISION            = '11'
       DEFAULT_LINEARIZATION_NAME  = 'mms'
       DEFAULT_API_ROOT_URL        = 'https://id.who.int'
