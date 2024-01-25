@@ -11,7 +11,7 @@ module Icd
       DEFAULT_RELEASE_ID          = '2023-01'
       DEFAULT_REVISION            = '11'
 
-      def initialize(**options)
+      def initialize(options = {})
         @options = options
       end
 

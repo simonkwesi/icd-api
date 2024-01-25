@@ -52,7 +52,7 @@ http_interactions:
       Api-Version:
       - v2
       Accept-Language:
-      - en
+      - fr
       Authorization:
       - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2OTA4MTE5MTYsImV4cCI6MTY5MDgxNTUxNiwiaXNzIjoiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQiLCJhdWQiOlsiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQvcmVzb3VyY2VzIiwiaWNkYXBpIl0sImNsaWVudF9pZCI6IjkxOTZkZGE2LTFiMmUtNGI2My1iODYwLTQzZGQ4YmVhZjdhY181YzA0M2Q0ZC05ZGUzLTQwMDAtOGI5Zi0wMzFkNDZiZmZkNWEiLCJzY29wZSI6WyJpY2RhcGlfYWNjZXNzIl19.Gzdl93JDlRYLoSZINn6cylQgzjxNHEtKZSks8PhYYFeNh-DhQljRwtdS93hewfk9aFmtrXPLlUgu-yWa5hXlr2HMmdXO0d6uJSiyroGy9mmCgqH0nnvviTNeH2-Lq7Bqiq3SIo3g4D-UCBu9nuStt-QItgT5UK9CIACKic39Ruw9nshsPFQeVN3MioKSNtMESXiP3oqpazGpnLhTl5lOpG6CAillowykpjLQvl594mNnntQFeTLGBw68SAbemmxlAGlMvJm67iBaBpsArQvwFMelnrzhO35rAhXhI_HIm4NSO49sUVD-0f5ZlaR2QSYwweKqb4hWt2Aj57QOyxnhDQ
       User-Agent:

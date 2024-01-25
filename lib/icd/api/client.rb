@@ -11,10 +11,10 @@ require 'json'
 module Icd
   module Api
     class Client
-      def initialize(client_id:, client_secret:, **_options)
+      def initialize(client_id:, client_secret:, **options)
         @client_id = client_id
         @client_secret = client_secret
-        @options = Options.new
+        @options = Options.new(options)
       end
 
       def search(term)
