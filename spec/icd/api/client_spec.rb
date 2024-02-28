@@ -2,14 +2,23 @@
 
 require 'spec_helper'
 RSpec.describe Icd::Api::Client do
-  let(:client) do
-    described_class.new(client_id: '',
-                        client_secret: '')
-  end
+  let(:language) { nil }
+  let(:client) { described_class.new(client_id: '', client_secret: '', language:) }
 
   context 'Fetch by Code -- Good Value' do
     let(:response) do
       VCR.use_cassette('by_code_FB32.5') { client.fetch_stem_id_by_code('FB32.5') }
+    end
+
+    it 'returns required fields' do
+      expect(response).to eq('http://id.who.int/icd/release/11/2022-02/mms/254923627')
+    end
+  end
+
+  context 'Fetch by Code in French' do
+    let(:language) { :fr }
+    let(:response) do
+      VCR.use_cassette('by_code_FB32.5_fr') { client.fetch_stem_id_by_code('FB32.5') }
     end
 
     it 'returns required fields' do

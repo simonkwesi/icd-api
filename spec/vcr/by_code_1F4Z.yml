@@ -5,10 +5,10 @@ http_interactions:
     uri: https://icdaccessmanagement.who.int/connect/token
     body:
       encoding: UTF-8
-      string: client_id=9196dda6-1b2e-4b63-b860-43dd8beaf7ac_5c043d4d-9de3-4000-8b9f-031d46bffd5a&client_secret=SkYsCHb02fYyJsLPS%2FAvyKIBifwGir90vCI1Z82vYG0%3D&grant_type=client_credentials&scope=icdapi_access
+      string: client_id=&client_secret=&grant_type=client_credentials&scope=icdapi_access
     headers:
       User-Agent:
-      - Faraday v1.10.0
+      - Faraday v<%= Faraday::VERSION %>
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -42,7 +42,7 @@ http_interactions:
   recorded_at: Mon, 31 Jul 2023 13:58:38 GMT
 - request:
     method: get
-    uri: https://id.who.int/icd/release/11/2022-02/mms/codeinfo/1F4Z?flexiblemode=false
+    uri: https://id.who.int/icd/release/11/2023-01/mms/codeinfo/1F4Z?flexiblemode=false
     body:
       encoding: US-ASCII
       string: ''
@@ -56,7 +56,7 @@ http_interactions:
       Authorization:
       - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2OTA4MTE5MTksImV4cCI6MTY5MDgxNTUxOSwiaXNzIjoiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQiLCJhdWQiOlsiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQvcmVzb3VyY2VzIiwiaWNkYXBpIl0sImNsaWVudF9pZCI6IjkxOTZkZGE2LTFiMmUtNGI2My1iODYwLTQzZGQ4YmVhZjdhY181YzA0M2Q0ZC05ZGUzLTQwMDAtOGI5Zi0wMzFkNDZiZmZkNWEiLCJzY29wZSI6WyJpY2RhcGlfYWNjZXNzIl19.RX_XX5bAgKaHn-2_p03_y75h1ZuVYJoi4TOX0wEJxhQLUaBqP9TyyFAXSUcaxMncf1faFHUxsPAawj9xUVjwHXEMAUwGn_bnaVQc4UK0k6_IYTq3dq7-QrNtZXVK6G8GZOpnZ6Y4LeyoD4lPMa-mE8QAHT2OnJQym3BtWRA4516GEHFp99Cai-sfCnTdTK4nKvkpK9TLp8vJ-iKoX0l5SvqIh-CePJYs8YiNV4wAu-4m3wH1HWLyvLiI-S6VpK_dSS8LR-KDBN13s1vHhjuqNlSoRpCexVyE37RgZZyyYoXxhwrpIeU5M0mrtE3uRt2UO4VIMn9aNZZfJGBpFa8nbg
       User-Agent:
-      - Faraday v1.10.0
+      - Faraday v<%= Faraday::VERSION %>
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
